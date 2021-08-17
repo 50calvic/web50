@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <a href="index.html"> <img src="images/googlesmall.svg" id="small-logo"alt=""> </a>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          Search
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="images-search.html">
+          Images
+        </a>
+      </li>
+    </ul>
+  </nav>
+    <div>
+      <h5 id="as">Advanced Search</h5>
+    </div>
+  <hr>
+  <!-- container start -->
+  <div class=".container-fluid">
+
+
+
+    <div id="adv-left">
+      <span>Find pages with...</span><br>
+
+      <form action="https://google.com/search">
+
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label-sm">All these words:</label>
+          <div class="col-sm-5">
+            <input type="text" name="q" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label-sm">This exact word or phrase:</label>
+          <div class="col-sm-5">
+            <input type="text" name="as_epq" class="form-control form-control-sm">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label-sm">Any of these words:</label>
+          <div class="col-sm-5">
+            <input type="text" name="as_oq" class="form-control form-control-sm">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label-sm">None of these words:</label>
+          <div class="col-sm-5">
+            <input type="text" name="as_eq" class="form-control form-control-sm">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label-sm">Numbers ranging from:</label>
+          <div class="col-sm-2">
+            <input type="text" name="as_nlo" class="form-control form-control-sm" id="as_nlo">
+          </div>
+          <div class="col-sm-1" id="to">
+            to
+          </div>
+          <div class="col-sm-2">
+            <input type="text" name="as_nhi" class="form-control form-control-sm">
+          </div>
+        </div>
+
+        <center>
+          <input type="submit" value="Advanced Search" class="btn btn-primary">
+        </center>
+
+      </form>
+
+
+    </div>
+    <!-- container end -->
+  </div>
+
+
+</body>
+
+</html>
